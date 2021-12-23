@@ -1,5 +1,5 @@
 # framework-x-plus
 framework-x-plus
 ```php
-composer require seregazhuk/php-watcher --dev --ignore-platform-reqs
+composer create-project imparting/framework-x-plus  --ignore-platform-reqs
 ```
