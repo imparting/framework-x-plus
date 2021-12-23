@@ -1,0 +1,12 @@
+watch:
+  - app
+  - config
+  - support
+  - public
+extensions:
+  - php
+  - yaml
+ignore:
+  - runtime
+  - vendor
+executable: php8.1
