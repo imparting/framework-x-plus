@@ -3,12 +3,11 @@
 namespace app\middlewares;
 
 use Psr\Http\Message\ServerRequestInterface;
-use React\Http\Message\Response;
 use Throwable;
 
 class ThrowableMiddleware
 {
-    public function __invoke(ServerRequestInterface $request, callable $next): Response
+    public function __invoke(ServerRequestInterface $request, callable $next)
     {
         try {
             return $next($request);
