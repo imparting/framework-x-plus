@@ -77,13 +77,14 @@ function ok($data = null): Response
 }
 
 /**
- * @param $msg
+ * @param string $msg
  * @param null $data
+ * @param int $code
  * @return Response
  */
-function fail($msg = 'fail', $data = null): Response
+function fail($msg = 'fail', $data = null, $code = 1000): Response
 {
-    return response($data, $msg, 1000);
+    return response($data, $msg, $code);
 }
 
 /**

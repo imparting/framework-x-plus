@@ -3,7 +3,7 @@
 use support\Route;
 
 $middlewares = [
-    app\middlewares\ApiMiddleware::class,
+    app\middlewares\ThrowableMiddleware::class,
     app\middlewares\ValidatorMiddleware::class
 ];
 

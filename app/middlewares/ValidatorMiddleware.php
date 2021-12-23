@@ -12,7 +12,7 @@ class ValidatorMiddleware
         try {
             return $next($request);
         } catch (ValidationException $validationException) {
-            return fail($validationException->getMessage(), 2000);
+            return fail($validationException->getMessage(), null, 2000);
         }
     }
 }
