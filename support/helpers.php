@@ -82,7 +82,7 @@ function ok($data = null): Response
  * @param int $code
  * @return Response
  */
-function fail($msg = 'fail', $data = null, $code = 1000): Response
+function fail($msg = 'fail', $code = 1000, $data = null): Response
 {
     return response($data, $msg, $code);
 }
